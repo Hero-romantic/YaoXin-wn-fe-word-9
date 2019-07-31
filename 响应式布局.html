@@ -1,0 +1,78 @@
+<!--需求-->
+<!--写一个简单的响应式的博客系统，只需要实现文章列表页和内容页即可.-->
+
+<!--必做部分：完成静态页面即可-->
+<!-- - 尽量使用原生CSS，如果对响应式还是比较困难，可以考虑使用bootstarp之类的UI框架。-->
+<!-- - 模板仅供参考，请勿全部照抄！-->
+
+<!--以下是选做部分，难度可能较大，有兴趣的同学可以尝试以下，任选其一即可：-->
+
+<!--选做一：实现翻页，文章搜索，评论等功能，数据可以用JS对象模拟。-->
+
+
+<!--选做二：搭建博客的后台， 实现翻页，文章搜索，评论等功能。-->
+<!-- - 可以使用express、koa等Node.js框架。-->
+<!-- - 可选mysql、mongodb等作为数据库。-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="initial-scale=1.0,width=device-width"/>
+
+   <title>响应式布局个人博客</title>
+
+  <style>
+          .box{
+            margin: auto;
+          }
+          .box>div{
+            width:229px;
+            height: 274px;
+            background-color: #00CCFF;
+            float:left;
+            margin-right:10px;
+          }
+
+          /*PC端*/
+          @media screen and (min-width:992px){
+            .box{
+              width:946px;
+            }
+            .box>div:last-child{
+              margin-right: 0;
+            }
+          }
+          /*pad端*/
+          @media screen and (max-width:991px) and (min-width:510px ){
+            .box{
+              width:468px;
+            }
+            .box>div{
+              margin-bottom: 10px;
+            }
+            .box>div:last-child,.box>div:nth-child(2){
+              margin-right: 0;
+            }
+          }
+          /*移动端*/
+          @media screen and (max-width: 509px){
+            .box{
+              width:307px;
+            }
+            .box>div{
+              width:307px;
+              height: 256px;
+              margin-right: 0;
+              margin-bottom: 10px;
+            }
+          }
+  </style>
+</head>
+<body>
+<div class="box">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+</body>
+</html>

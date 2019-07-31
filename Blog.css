@@ -1,0 +1,146 @@
+.background-color{
+  background-color: #969896;
+}
+.inner {
+  clear: both;
+  float:left;
+  margin: 0 auto;
+  max-width: 1040px;
+}
+.title-home{
+  font-size: 40px;
+  margin-bottom: .2em;
+}
+.search {
+  position: relative;
+  height: 30px;
+  text-align: right;
+  line-height: 30px;
+  padding-right: 10px;
+}
+
+.search .search-icon {
+  float: right;
+  height: 100%;
+  margin: 0 10px;
+  line-height: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.search .search-input {
+  float: right;
+  width: 20%;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.search .search-clear {
+  display: none;
+}
+
+.search .search-results {
+  display: block;
+  z-index: 1000;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 30%;
+  max-height: 400px;
+  overflow: auto;
+  text-align: left;
+  border-radius: 5px;
+  background: #ccc;
+  box-shadow: 0 .3rem .5rem #333;
+}
+
+.search .search-results .result-item {
+  background: aqua;
+  color: #000;
+  margin: 5px;
+  padding: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.tag{
+  -ms-flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tag_home{
+   clear: both;
+   position: relative;
+   float:left;
+   font-family: 微软雅黑;
+   font-size: 20px;
+   color: black;
+   margin-left: 30px;
+   margin-top: 50px;
+ }
+.nav{
+  clear: both;
+  position: relative;
+  float:left;
+  font-family: 微软雅黑;
+  font-size: 20px;
+  color: black;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.artical-classification{
+  float:left;
+  margin-left: 300px;
+  margin-top: 10px;
+}
+.type_1{
+  clear: both;
+  float:left;
+  margin-left: 300px;
+  margin-top: 20px;
+  background-color: #f3f3f3;
+}
+.type{
+  clear: both;
+  float: left;
+  margin-left: 300px;
+  margin-top: 15px;
+  background-color:#f3f3f3;
+}
+.artical-background{
+  position: absolute;
+  left:430px;
+  top:160px;
+  clear: both;
+  float:right;
+  background-color: whitesmoke;
+}
+.bottom_background
+{
+  background-color: #95afff;
+}
+#foot
+{
+  width: 1519px;
+  height: 24px;
+  background-color: #343a40;
+  padding: 48px 0 48px 0;
+}
+.foot-tip
+{
+  width:auto;
+  height: 24px;
+  text-align: center;
+  padding: 0 15px 0 15px;
+}
+.foot-tip-write
+{
+  height: 24px;
+  color: #ffffff;
+  font-size: 16px;
+}

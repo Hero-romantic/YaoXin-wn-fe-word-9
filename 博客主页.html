@@ -1,0 +1,67 @@
+<!--需求-->
+<!--写一个简单的响应式的博客系统，只需要实现文章列表页和内容页即可.-->
+
+<!--必做部分：完成静态页面即可-->
+<!-- - 尽量使用原生CSS，如果对响应式还是比较困难，可以考虑使用bootstarp之类的UI框架。-->
+<!-- - 模板仅供参考，请勿全部照抄！-->
+
+<!--以下是选做部分，难度可能较大，有兴趣的同学可以尝试以下，任选其一即可：-->
+
+<!--选做一：实现翻页，文章搜索，评论等功能，数据可以用JS对象模拟。-->
+
+
+<!--选做二：搭建博客的后台， 实现翻页，文章搜索，评论等功能。-->
+<!-- - 可以使用express、koa等Node.js框架。-->
+<!-- - 可选mysql、mongodb等作为数据库。-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客主页</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="Blog.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="background-color">
+       <div class="inner">
+              <h1 class="title-home">我的个人博客</h1>
+       </div>
+       <div class="tag">
+                <a href="" class="tag_home">首页</a>
+                <a href="" class="nav">文章</a>
+                <a href="" class="nav">图片</a>
+                <a href="" class="nav">资料</a>
+        </div>
+        <div class="search">
+                <i class="material-icons search-icon search-start">search</i>
+                <input type="text" class="search-input" placeholder="Searching..." />
+                <i class="material-icons search-icon search-clear">clear</i>
+        <div class="search-results"></div>
+        </div>
+        <div>
+          <h2 class="artical-classification">文章分类</h2>
+        </div>
+        <div>
+          <div>
+              <a href="#" class="type_1">Python</a>
+              <a href="#" class="type">Java</a>
+              <a href="#" class="type">前端</a>
+              <a href="#" class="type">Javascript</a>
+          </div>
+        </div>
+    </div>
+    <div class="artical-background">
+      <div class="postion">
+      <p>什么叫做垃圾回收？</p>
+      <p>生活案例 - 小整数池 - 系统默认创建好的，等着你使用 - 概述 整数在程序中的使用非常广泛</p>
+      <p>Python为了优化速度，使用了小整数对象池， 避免为整数频繁申请和销毁内存空间</p>
+      <p>Python 对小整数的定义是 [-5, 256] 这些整数对象是提前建立好的，不会被垃圾回收。<`/p>
+      <p>在一个 Python 的程序中， 无论这个整数处于LEGB(局部变量，闭包，全局，内建模块)中的哪个位置， 所有位于这个范围内的整数使用的都是同一个对象。</p>
+      <p>大整数池 默认创建出来，池内为空的，创建一个就会往池中存储一个</p>
+      </div>
+    </div>
+
+
+</body>
+</html>
